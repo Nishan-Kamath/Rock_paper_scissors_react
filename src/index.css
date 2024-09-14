@@ -1,0 +1,76 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.score {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.score p{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin: 20px;
+}
+
+.choices button{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+}
+
+.choices button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 2rem;
+  border: none;
+  background-color: #09ff1e;
+  color: rgb(51, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choices button:hover {
+  background-color: #006b1e;
+  color: aliceblue;
+}
+
+.choices-display {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.result h2 {
+  font-size: 2rem;
+  color: #28a745;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .choices {
+    flex-direction: column; /* Stack buttons in a column on smaller screens */
+    align-items: center;
+  }
+}
